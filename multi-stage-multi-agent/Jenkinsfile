@@ -17,22 +17,6 @@ pipeline {
         sh 'node --version'
       }
     }
-    stage('Data-base') {
-      agent {
-        docker { image 'node:16-alpine' }
-      }
-      steps {
-        sh 'node --version'
-      }
-    }
-stage('Front-end') {
-      agent {
-        docker { image 'node:16-alpine' }
-      }
-      steps {
-        sh 'node --version'
-      }
-    }
-
+  
   }
 }
